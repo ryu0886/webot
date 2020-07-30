@@ -40,6 +40,7 @@
     <Folder Include="webot\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README.md" />
     <Content Include="requirements.txt" />
     <Content Include="webot\static\content\bootstrap.css" />
     <Content Include="webot\static\content\bootstrap.min.css" />
