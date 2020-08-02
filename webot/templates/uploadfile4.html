@@ -1,0 +1,25 @@
+﻿{% extends "root.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<form action="/upload" class="dropzone">
+    <div class="fallback">
+        <input name="file" type="file" multiple />
+    </div>
+</form>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+
+
+</script>
+
+{% endblock %}
