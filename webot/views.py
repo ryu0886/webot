@@ -64,7 +64,7 @@ def upload():
 
 @app.route('/page1', methods=["GET"])
 def page1():
-    return redirect(url_for("uploadfile0"))
+    return redirect(url_for("uploadfile2"))
 
 @app.route('/uploadfile0', methods=["GET"])
 def uploadfile0():

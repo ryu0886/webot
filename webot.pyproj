@@ -51,29 +51,23 @@
   <ItemGroup>
     <Content Include="README.md" />
     <Content Include="requirements.txt" />
-    <Content Include="webot\static\blueimp\css\demo-ie8.css" />
-    <Content Include="webot\static\blueimp\css\demo.css" />
     <Content Include="webot\static\blueimp\css\jquery.fileupload-noscript.css" />
     <Content Include="webot\static\blueimp\css\jquery.fileupload-ui-noscript.css" />
     <Content Include="webot\static\blueimp\css\jquery.fileupload-ui.css" />
     <Content Include="webot\static\blueimp\css\jquery.fileupload.css" />
-    <Content Include="webot\static\blueimp\css\style.css" />
     <Content Include="webot\static\blueimp\img\loading.gif" />
     <Content Include="webot\static\blueimp\img\progressbar.gif" />
-    <Content Include="webot\static\blueimp\js\app.js" />
     <Content Include="webot\static\blueimp\js\cors\jquery.postmessage-transport.js" />
     <Content Include="webot\static\blueimp\js\cors\jquery.xdr-transport.js" />
-    <Content Include="webot\static\blueimp\js\jquery.fileupload-angular.js" />
+    <Content Include="webot\static\blueimp\js\demo.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload-audio.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload-image.js" />
-    <Content Include="webot\static\blueimp\js\jquery.fileupload-jquery-ui.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload-process.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload-ui.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload-validate.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload-video.js" />
     <Content Include="webot\static\blueimp\js\jquery.fileupload.js" />
     <Content Include="webot\static\blueimp\js\jquery.iframe-transport.js" />
-    <Content Include="webot\static\blueimp\js\main.js" />
     <Content Include="webot\static\blueimp\js\vendor\jquery.ui.widget.js" />
     <Content Include="webot\static\content\bootstrap.css" />
     <Content Include="webot\static\content\bootstrap.min.css" />
@@ -127,6 +121,7 @@
     <Content Include="webot\templates\test.html" />
     <Content Include="webot\templates\uploadfile3.html" />
     <Content Include="webot\templates\uploadfile4.html" />
+    <Content Include="webot\templates\uploadfile5.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
