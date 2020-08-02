@@ -14,6 +14,27 @@ def allowed_file(filename):
 def root():
     return redirect(url_for("page1"))
 
+@app.route('/uploadex', methods=["GET","POST"])
+def uploadex():
+    #ref01 = request.args.get('ref01', default = 0, type = int)
+    #if ref01 == 0: return redirect(url_for("page1"))
+    print("uploadex>>")
+    b_redir = False
+    if request.method == "POST":
+        files = request.files.getlist("files[]")
+        print(files)
+        if files:
+            pass
+
+    print("uploadex<<")
+    if b_redir:
+        print("redirect...")
+        #Redirect on Ajax calls doesn't work, browser doesn't handle it.
+        #return redirect(url_for("result"), code=302)
+        return jsonify({"redirect": "/result"})
+    else:
+        return redirect(url_for("page1"))
+
 @app.route('/upload', methods=["GET","POST"])
 def upload():
     #ref01 = request.args.get('ref01', default = 0, type = int)
@@ -43,13 +64,31 @@ def upload():
 
 @app.route('/page1', methods=["GET"])
 def page1():
-    return redirect(url_for("uploadfile3"))
+    return redirect(url_for("uploadfile0"))
 
 @app.route('/uploadfile0', methods=["GET"])
 def uploadfile0():
     """Renders the home page."""
     return render_template(
         'uploadfile0.html',
+        title='Analyzer',
+        year=datetime.now().year,
+    )
+
+@app.route('/uploadfile1', methods=["GET"])
+def uploadfile1():
+    """Renders the home page."""
+    return render_template(
+        'uploadfile1.html',
+        title='Analyzer',
+        year=datetime.now().year,
+    )
+
+@app.route('/uploadfile2', methods=["GET"])
+def uploadfile2():
+    """Renders the home page."""
+    return render_template(
+        'uploadfile2.html',
         title='Analyzer',
         year=datetime.now().year,
     )
@@ -68,6 +107,15 @@ def uploadfile4():
     """Renders the home page."""
     return render_template(
         'uploadfile4.html',
+        title='Analyzer',
+        year=datetime.now().year,
+    )
+
+@app.route('/uploadfile5', methods=["GET"])
+def uploadfile5():
+    """Renders the home page."""
+    return render_template(
+        'uploadfile5.html',
         title='Analyzer',
         year=datetime.now().year,
     )
